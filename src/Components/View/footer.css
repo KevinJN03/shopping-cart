@@ -1,0 +1,129 @@
+#footer {
+    bottom: 0;
+    background-color: var(--primary-yellow)
+}
+
+#footer-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    margin-top: 70px;
+}
+#footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    border-right: 1px solid black;
+}
+#footer-left legend {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+#company , #brand, #help {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer-left a {
+    color: black;
+    font-size: 0.8rem;
+    padding: 5px 0;
+    text-decoration: none;
+}
+#footer-right #icons{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: 50%;
+ margin-top: 25px;
+
+
+}
+
+
+#icons section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#icon-img{
+
+    margin-bottom: 20px
+   
+}
+
+#icon-img:nth-of-type(1){
+font-size: 1.7rem
+}   
+
+#icons p {
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+#subscribe_wrapper {
+     background-color: black;
+     display: flex;
+     justify-content: center;
+     padding: 40px 0;
+
+}
+
+#subscribe {
+    display: flex;
+   justify-content: space-around;
+    color: white;
+    width: 70%;
+    
+    
+
+}
+
+#subscribe form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#subscribe form input {
+    height: 60px;
+    max-width: 400px;
+    width: 300px;
+    color: white;
+    background-color: black;
+    border-color: var(--primary-yellow);
+    padding: 0 10px;
+    
+    border: 1px solid var(--primary-yellow);
+    border-right: 0;
+}
+
+
+#subscribe-btn {
+    height: 61px;
+   padding: 10px 35px;
+   font-size: 0.8rem;
+   letter-spacing: 1px;
+   font-weight: 600;
+   background-color: var(--primary-yellow);
+   border: 1px solid var(--primary-yellow);
+   
+}
+#subscribe-btn:hover {
+    background-color: white;
+}
+#subscribe form input::placeholder{
+    color: var(--primary-yellow)
+}
