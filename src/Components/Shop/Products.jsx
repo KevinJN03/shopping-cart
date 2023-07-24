@@ -1,9 +1,10 @@
 import { styled } from "styled-components"
 import ProductCard from "./ProductCard"
 import product from "./product"
-
-
+import { Outlet } from "react-router-dom"
+import { useState, createContext } from "react";
 const Products = () => {
+    const [selectedItem, setSelectedItem] = useState(null)
 return(
     <div id="product-grid">
     {product.map(item => {
@@ -18,7 +19,7 @@ return(
         
     })}
 
-
+<Outlet />
     </div>
 )
 }
