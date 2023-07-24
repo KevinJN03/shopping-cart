@@ -20,14 +20,21 @@
     width: 100px;
     
 }
+
+
 .img-wrapper img {
 object-fit: cover;
 width: 100%;
 height: 100%;
 object-position:50% 50%;
-scale: 3
-}
+/* scale: 3; */
+transform: scale(3);
+transition: transform 0.3s ease-in-out;
 
+}
+.img-wrapper img:hover {
+    transform: scale(3.2);
+}
 .header_nav {
     display: flex;
     flex-direction: row;

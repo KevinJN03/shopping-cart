@@ -1,7 +1,9 @@
 #image-wrapper {
     width: 100%;
     height: 650px;
-    position: relative
+    position: relative;
+    
+    
 }
 
 #image-wrapper img{
@@ -12,12 +14,17 @@
     
 }
 #main {
+min-height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+position: relative;
 
 }
 
 #shop-now-btn {
     
-    z-index: 1;
+    /* z-index: 1; */
     position: absolute;
     top: 85%;
   left: 85%;

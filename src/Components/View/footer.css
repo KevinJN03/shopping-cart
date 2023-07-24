@@ -1,7 +1,14 @@
 #footer {
+    /* position: fixed; */
     bottom: 0;
-    background-color: var(--primary-yellow)
+    /* left: 0; */
+    width: 100%;
+    background-color: var(--primary-yellow);
+    margin-top: auto;
+    
 }
+
+
 
 #footer-menu{
     display: grid;
