@@ -10,6 +10,7 @@ import { useEffect, useState, createContext, useContext } from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer";
 import Cart from "./Cart/Cart";
+import About from "./About/About";
 
 
 const Body = ({addToBasket, removeItem, updateItem}) => {
@@ -26,11 +27,13 @@ const Body = ({addToBasket, removeItem, updateItem}) => {
   } 
   else if (name === "cart") {
     content = (<Cart removeItem={removeItem} updateItem={updateItem}/>);
-  } 
-  else if (name === undefined || name === "Home") {
+  } else if (name ==="about"){
+    content = (<About/>)
+  }
+  else if (name == "home" || name === undefined) {
     
     content = (<Home />);
-  } else {
+  } else{
     console.log("name: ", name)
     content = (<ErrorPage/>)
   }

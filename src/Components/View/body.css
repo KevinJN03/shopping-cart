@@ -43,8 +43,21 @@ position: relative;
 
   
 }
-
-.swiper-wrapper{
-margin-left: 10% !important;
-margin-right: 20% !important;
+#carousel {
+    position: relative !important;
 }
+.swiper-wrapper{
+
+    margin-left: 6%;
+}
+.swiper-button-next {
+    position: absolute;
+    right: 0% !important;
+    
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: -0.1% !important
+}
+

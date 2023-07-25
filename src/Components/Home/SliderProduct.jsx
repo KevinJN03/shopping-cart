@@ -2,14 +2,15 @@ import { styled } from "styled-components"
 import { Link } from "react-router-dom"
 const SliderProduct =({image1, name, price, id})=> {
     return (
-        <Link to={"./shop/"+ id} style={{textDecoration: "none", color: "black"}}>
+        
 <Wrapper>
+    <Link to={"./shop/"+ id} style={{textDecoration: "none", color: "black"}}>
     <IMG src={image1}/>
     <h3>{name}</h3>
     <h4>£{price}</h4>
-    
+    </Link>
 </Wrapper>
-        </Link>
+        
 
     )
 }
