@@ -18,6 +18,8 @@ const Router = () => {
       element: <App />,
     },
     { path: "/shop/:id", element: <App /> },
+
+    { path: "/shop/cart", element: <App /> },
   ]);
 
   return <RouterProvider router={router} />;

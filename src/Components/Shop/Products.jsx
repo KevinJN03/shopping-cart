@@ -11,7 +11,7 @@ return(
 
         return( 
         <>
-        <ProductCard key={item.id} id={item.id} name={item.name} price={item.price} image1={item.image1}/>
+        <ProductCard key={item.id} id={item.id} name={item.name} price={item.price} image1={item.image1} />
         </>)
         
         
