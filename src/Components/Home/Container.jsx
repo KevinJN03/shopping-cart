@@ -30,7 +30,7 @@ height: 500px;
 `
 
 const TextWrapper = styled.div`
-
+max-width: 420px;
 `
 
 export default Container;
