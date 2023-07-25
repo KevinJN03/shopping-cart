@@ -25,6 +25,17 @@ position: relative;
 
 }
 
+#home {
+    width: 100%;
+}
+
+#eyecare-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end
+}
 #shop-now-btn {
     
     /* z-index: 1; */

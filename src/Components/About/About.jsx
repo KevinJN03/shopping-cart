@@ -1,9 +1,9 @@
 import Story from "./Story"
 import { styled } from "styled-components";
 import StoryMain from "./Story_MAin";
-import img1 from "../../assets/img/connor-botts-PlNHJCJhcrw-unsplash.jpg"
+import img3 from "../../assets/img/connor-botts-PlNHJCJhcrw-unsplash.jpg"
 import img2 from "../../assets/img/pexels-thaís-silva-2119500.jpg"
-import img3 from "../../assets/img/nonresident-Lr7FLfiJxLo-unsplash.jpg"
+import img1 from "../../assets/img/nonresident-Lr7FLfiJxLo-unsplash.jpg"
 import eyeImg from "../../assets/img/david-travis-aVvZJC0ynBQ-unsplash.jpg"
 import StoryEyeCare from "./Story_EYECARE";
 import Community from "./Community";
@@ -24,7 +24,7 @@ const About = () => {
         text1={`At Urban Gaze, we hold a firm belief that stylish and affordable glasses should be accessible to everyone. Our unwavering dedication drives us to create frames that seamlessly blend trendiness and fashion with utmost accessibility.`}
         text2={`From timeless classics to contemporary masterpieces, our diverse frames cater to every taste and style, ensuring our customers effortlessly discover their perfect pair.`}
         text3={`Embedded at the core of our brand is a commitment to inclusivity, guiding our every endeavor as we take pride in empowering people worldwide to see better and embrace their best selves. Urban Gaze – where style knows no boundaries.`}
-        buttontext={`Browse Products`}
+        buttontext={`Browse Frames`}
         image={img2}
         direction={"row-reverse"}
         textAlign={"right"}
@@ -36,7 +36,7 @@ const About = () => {
         text1={`At Urban Gaze, we stand by the ethos of Responsible Shade, driven by our unwavering commitment to making a positive impact on the world around us. As a business, we embrace the responsibility of giving back to the communities we serve and safeguarding the planet we all call home.`}
         text2={`From employing sustainable materials and manufacturing practices to supporting local charities and non-profits, our journey is one of constant pursuit to create meaningful change.`}
         text3={`Choosing our brand goes beyond acquiring stylish and functional glasses; it signifies a shared commitment to creating a positive difference in the world. With Urban Gaze, embrace your vision, and together, let's make a lasting impact on our planet and the lives we touch.`}
-        buttontext={`Browse Products`}
+        buttontext={`Browse Sunnies`}
         image={img3}
          />
 

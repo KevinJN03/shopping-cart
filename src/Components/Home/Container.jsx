@@ -31,6 +31,11 @@ height: 500px;
 
 const TextWrapper = styled.div`
 max-width: 420px;
+display: flex;
+flex-direction: column;
+gap: 5px;
+margin-bottom: 10px;
+margin-top: 15px;
 `
 
 export default Container;

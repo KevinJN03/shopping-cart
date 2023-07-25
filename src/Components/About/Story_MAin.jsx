@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-
+import {Link} from "react-router-dom"
 const StoryMain = ({ image, alt, text1, text2, text3, buttontext, title, position, direction, textAlign }) => {
   return (
     <Wrapper direction={direction}>
@@ -15,7 +15,9 @@ const StoryMain = ({ image, alt, text1, text2, text3, buttontext, title, positio
         <p>{text2}</p>
         <p>{text3}</p>
         <ButtonWrapper position={position}>
-          <Button>{buttontext}</Button>  
+         <Link style={{textDecoration: "none"}} to={"/shop"}>
+         <Button>{buttontext}</Button> 
+         </Link>  
         </ButtonWrapper>
         
       </TextWrapper>
