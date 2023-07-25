@@ -29,7 +29,7 @@ const product = [
     image2: img901,
     image3: img902,
     price: 243,
-    item: "O4430U-OGB18753_RTU_TU_ONUL__",
+    reference: "O4430U-OGB18753_RTU_TU_ONUL__",
     id: 1
   },
 
@@ -47,7 +47,7 @@ const product = [
     image2: imgdior1,
     image3: imgdior2,
     price: 440,
-    item: "DSGTB7IXR_10A1",
+    reference: "DSGTB7IXR_10A1",
     id: 2
   },
   {
@@ -64,7 +64,7 @@ const product = [
     image2: DIORHIGHLIGHT1,
     image3: DIORHIGHLIGHT2,
     price: 450,
-    item: "DSGTB7IXR_10A1",
+    reference: "DSGTB7IXR_10A1",
     id: uuidv4(),
   },
   {
@@ -81,7 +81,7 @@ const product = [
     image2: DIORMIDNIGHT1,
     image3: DIORMIDNIGHT2,
     price: 450,
-    item: "DMNGS1IXR_26B0",
+    reference: "DMNGS1IXR_26B0",
     id: uuidv4()
   }
 ];

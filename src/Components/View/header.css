@@ -5,13 +5,10 @@
 
 .header_main {
    width: 100%;
-    /* position: fixed;
-    top: 0%;
-    left: 0; */
+    position: relative;
     background-color: var(--primary-yellow);
     display: flex;
     justify-content: center;
-    
     padding: 20px 0;
 }
 
@@ -46,6 +43,16 @@ transition: transform 0.3s ease-in-out;
     
 }
 #nav-section {
-    background-color: #222;;
+    background-color: #222;
     padding: 15px 0;
+}
+
+#icon-container{
+    
+   position: absolute;
+    right: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
 }

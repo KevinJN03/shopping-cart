@@ -1,52 +1,48 @@
-
-import { Link, useParams } from "react-router-dom"
-import "./View/body.css"
+import { Link, useParams } from "react-router-dom";
+import "./View/body.css";
 import { Outlet } from "react-router-dom";
 import Shop from "./Shop/Shop";
-import Home from "./Home";
+import Home from "./Home/Home";
 import product from "./Shop/product";
 import SingleProduct from "./Shop/SingleProduct";
 import ErrorPage from "./ErrorPage";
-import { useEffect, useState } from "react";
-import Header from "./Header/header";
+import { useEffect, useState, createContext, useContext } from "react";
+import Header from "./Header/Header";
 import Footer from "./Footer";
-const Body = () => {
-    const{ name}  = useParams();
-    const {id} = useParams();
-    const {selected, setSelected} = useState(0)
-    useEffect(()=> {
-//     setSelected(id)
-//     console.log("id: ", id)
-console.log("selected: ", selected)
-    })
+import Cart from "./Cart/Cart";
 
 
-useEffect(()=> {
-   console.log("using useEffect")
-})
-    return (
-        <main id="main">
-            <Header/>
-           {
-            
-        //    id ===   ? (
-        //     //console.log("id:", id)
-        //         <SingleProduct />
-        //    ):
-           name === "shop" ? (
-            <Shop/>
-           ):   
-           (<Home/>)
-           
-           
-           
-           }
-           <Footer/>
-            <Outlet/>
-        </main>
-    )
-}
+const Body = ({addToBasket, removeItem, updateItem}) => {
+  
+  const { name } = useParams();
+  const { id } = useParams();
 
-export default Body
 
-// product.find(prod =>console.log("prod id",prod.id) ) 
+  let content;
+  if (id) {
+    content = <SingleProduct addToBasket={addToBasket}/>;
+  } else if (name === "shop") {
+    content = (<Shop/>);
+  } 
+  else if (name === "cart") {
+    content = (<Cart removeItem={removeItem} updateItem={updateItem}/>);
+  } 
+  else if (name === undefined || name === "Home") {
+    
+    content = (<Home />);
+  } else {
+    console.log("name: ", name)
+    content = (<ErrorPage/>)
+  }
+  return( 
+
+      <main id="main">
+    {content}
+    </main>
+  
+  )
+};
+
+export default Body;
+
+// product.find(prod =>console.log("prod id",prod.id) )
