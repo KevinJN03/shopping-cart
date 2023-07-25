@@ -1,7 +1,6 @@
 import Story from "./Story"
 import { styled } from "styled-components";
 import StoryMain from "./Story_MAin";
-import Image from "../../assets/img/dmitry-ratushny-wpi3sDUrSEk-unsplash.jpg";
 import img1 from "../../assets/img/connor-botts-PlNHJCJhcrw-unsplash.jpg"
 import img2 from "../../assets/img/pexels-thaís-silva-2119500.jpg"
 import img3 from "../../assets/img/nonresident-Lr7FLfiJxLo-unsplash.jpg"
@@ -14,17 +13,17 @@ const About = () => {
         <Story/>
         <StoryMain 
         title={"About Us"}
-        text1={`SAVANT was born of a simple mission - to create high-quality, stylish glasses that would empower people to express themselves with confidence.`}
-        text2={`Founded by a group of passionate designers and eyewear enthusiasts, we started our journey with a commitment to crafting frames that would stand the test of time, both in terms of durability and style.`}
-        text3={`Today, we continue to build on that legacy by designing unique and trendsetting glasses that reflect the spirit and creativity of our brand. Join us as we continue to redefine eyewear fashion and bring our vision to life.`}
+        text1={`Urban Gaze was born with a visionary mission - to redefine eyewear fashion by offering high-quality, stylish glasses that empower individuals to express themselves with utmost confidence.`}
+        text2={`Inspired and fueled by a team of passionate designers and eyewear enthusiasts, our journey began with a steadfast commitment to crafting frames that marry durability and timeless style, standing the test of time.`}
+        text3={`As we continue to evolve, our legacy thrives through the creation of unique and trendsetting glasses that embody the spirit and creativity of our brand. Join us on this dynamic journey as we breathe life into our vision and continue to shape the future of eyewear fashion.`}
         buttontext={`Browse Products`}
         image={img1}
          />
          <StoryMain 
-        title={"About Us"}
-        text1={`SAVANT was born of a simple mission - to create high-quality, stylish glasses that would empower people to express themselves with confidence.`}
-        text2={`Founded by a group of passionate designers and eyewear enthusiasts, we started our journey with a commitment to crafting frames that would stand the test of time, both in terms of durability and style.`}
-        text3={`Today, we continue to build on that legacy by designing unique and trendsetting glasses that reflect the spirit and creativity of our brand. Join us as we continue to redefine eyewear fashion and bring our vision to life.`}
+        title={"Style for All"}
+        text1={`At Urban Gaze, we hold a firm belief that stylish and affordable glasses should be accessible to everyone. Our unwavering dedication drives us to create frames that seamlessly blend trendiness and fashion with utmost accessibility.`}
+        text2={`From timeless classics to contemporary masterpieces, our diverse frames cater to every taste and style, ensuring our customers effortlessly discover their perfect pair.`}
+        text3={`Embedded at the core of our brand is a commitment to inclusivity, guiding our every endeavor as we take pride in empowering people worldwide to see better and embrace their best selves. Urban Gaze – where style knows no boundaries.`}
         buttontext={`Browse Products`}
         image={img2}
         direction={"row-reverse"}
@@ -33,19 +32,19 @@ const About = () => {
 
          />
          <StoryMain 
-        title={"About Us"}
-        text1={`SAVANT was born of a simple mission - to create high-quality, stylish glasses that would empower people to express themselves with confidence.`}
-        text2={`Founded by a group of passionate designers and eyewear enthusiasts, we started our journey with a commitment to crafting frames that would stand the test of time, both in terms of durability and style.`}
-        text3={`Today, we continue to build on that legacy by designing unique and trendsetting glasses that reflect the spirit and creativity of our brand. Join us as we continue to redefine eyewear fashion and bring our vision to life.`}
+        title={"Embrace the Change"}
+        text1={`At Urban Gaze, we stand by the ethos of Responsible Shade, driven by our unwavering commitment to making a positive impact on the world around us. As a business, we embrace the responsibility of giving back to the communities we serve and safeguarding the planet we all call home.`}
+        text2={`From employing sustainable materials and manufacturing practices to supporting local charities and non-profits, our journey is one of constant pursuit to create meaningful change.`}
+        text3={`Choosing our brand goes beyond acquiring stylish and functional glasses; it signifies a shared commitment to creating a positive difference in the world. With Urban Gaze, embrace your vision, and together, let's make a lasting impact on our planet and the lives we touch.`}
         buttontext={`Browse Products`}
         image={img3}
          />
 
          <StoryEyeCare 
          image={eyeImg} 
-         title={`OUR COMMITMENT TO PROPER EYECARE`} 
-         text1={`We believe that everyone deserves access to high-quality eyecare, and that is why we have partnered with various organizations to promote awareness and support initiatives that make vision care accessible to those in need.`}
-         text2={`With every purchase, we also provide educational resources and support to help our customers take care of their eyes and maintain good eye health for years to come.`}
+         title={`Empowering Clear Vision`} 
+         text1={`Our dedication to Proper Eyecare is the cornerstone of Urban Gaze. We firmly believe that high-quality eyecare should be accessible to all, which is why we have forged meaningful partnerships with organizations to raise awareness and support initiatives that bridge the gap.`}
+         text2={`Beyond eyewear, our commitment extends to providing educational resources and unwavering support, empowering our customers to care for their eyes and uphold good eye health for a lifetime.`}
          />
 
          <Community/>

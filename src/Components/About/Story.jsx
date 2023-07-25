@@ -2,9 +2,9 @@ import { styled } from "styled-components";
 const Story = () => {
 return (
     <Section>
-        <h2>AN EYE FOR BETTER EYEWEAR</h2>
-        <p>Our designs are carefully crafted to capture the latest fashion trends while ensuring maximum comfort and functionality. With a range of unique styles and color options, we are confident that our collection has something to suit every taste and personality.</p>
-        <p>Our frames are crafted with attention to detail, utilizing the latest materials and technology to ensure the highest quality products. Elevate your eyewear game with SAVANT frames.</p>
+        <h2> A Fusion of Fashion and Comfort</h2>
+        <p>At UrbanGaze, our designs blend the latest fashion trends with maximum comfort, offering a diverse collection of styles and colors to suit every taste and personality.</p>
+        <p>UrbanGaze frames are a testament to our unwavering commitment to precision and quality. With an acute attention to detail and utilization of cutting-edge materials,</p>
     </Section>
 )
 }
