@@ -1,19 +1,20 @@
 import "./App.css";
 import Body from "./Components/Body";
 import Layout from "./Components/Layout";
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import product from "./Components/Shop/product";
 export const CartContext = createContext();
 const App = () => {
-  const obj1 = {
-    id: "6bf8c196-c97e-49bc-9de6-fdf3d8454e64",
-    image1: "/src/assets/product Images/DIORHIGHLIGHT S1I/1.avif",
-    name: "DIORHIGHLIGHT S1I",
-    price: 450,
-    quantity: 1,
-  };
-  const [cart, setCart] = useState([obj1]);
+ 
+  
   const [allProduct, setAllProduct] = useState(product);
+
+  useEffect(()=> {
+    console.log("mount");
+  }, [])
+
+
+  const [cart, setCart] = useState([allProduct[0], allProduct[1]]);
   function updateItem(id, amount) {
     console.log(id);
     console.log("amount:", amount);

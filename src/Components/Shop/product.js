@@ -30,7 +30,8 @@ const product = [
     image3: img902,
     price: 243,
     reference: "O4430U-OGB18753_RTU_TU_ONUL__",
-    id: 1
+    id: 1,
+    quantity: 2
   },
 
   {
@@ -48,7 +49,8 @@ const product = [
     image3: imgdior2,
     price: 440,
     reference: "DSGTB7IXR_10A1",
-    id: 2
+    id: 2,
+    quantity: 1
   },
   {
     name: "DIORHIGHLIGHT S1I",
