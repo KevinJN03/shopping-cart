@@ -42,6 +42,7 @@ const {cart} = useContext(CartContext)
 
       <main id="main">
     {content}
+    <Outlet/>
     </main>
   
   )
