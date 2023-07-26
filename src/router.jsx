@@ -3,6 +3,7 @@ import App from "./App";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
 
+
 const Router = () => {
   const router = createBrowserRouter([
     {
@@ -16,6 +17,7 @@ const Router = () => {
     },
     { path: "/shop/:id", element: <App /> },
 
+    
   ]);
 
   return <RouterProvider router={router} />;

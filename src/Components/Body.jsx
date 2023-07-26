@@ -13,6 +13,8 @@ import EmptyCart from "./Cart/EmptyCart";
 
 
 const Body = ({addToBasket, removeItem, updateItem}) => {
+
+  
   
   const { name } = useParams();
   const { id } = useParams();
@@ -38,6 +40,7 @@ const {cart} = useContext(CartContext)
     console.log("name: ", name)
     content = (<ErrorPage/>)
   }
+  
   return( 
 
       <main id="main">
