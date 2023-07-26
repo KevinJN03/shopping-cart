@@ -3,12 +3,9 @@ import "./View/body.css";
 import { Outlet } from "react-router-dom";
 import Shop from "./Shop/Shop";
 import Home from "./Home/Home";
-import product from "./Shop/product";
 import SingleProduct from "./Shop/SingleProduct";
 import ErrorPage from "./ErrorPage/ErrorPage";
 import { useEffect, useState,useContext } from "react";
-import Header from "./Header/Header";
-import Footer from "./Footer";
 import Cart from "./Cart/Cart";
 import About from "./About/About";
 import { CartContext } from "../App";
@@ -51,5 +48,3 @@ const {cart} = useContext(CartContext)
 };
 
 export default Body;
-
-// product.find(prod =>console.log("prod id",prod.id) )

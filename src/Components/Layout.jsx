@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header/Header";
+
 function Layout({ component }) {
   return (
     <>
@@ -9,4 +10,4 @@ function Layout({ component }) {
     </>
   );
 }
-export default Layout
+export default Layout;

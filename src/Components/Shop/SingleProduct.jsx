@@ -1,27 +1,26 @@
 import { useParams } from "react-router-dom";
-import product from "./product";
 import { useEffect, useState, useRef, useContext } from "react";
 import { styled } from "styled-components";
 import { CartContext } from "../../App";
-import { v4 as uuidv4} from "uuid"
-const SingleProduct = ({addToBasket}) => {
+import { v4 as uuidv4 } from "uuid";
+const SingleProduct = ({ addToBasket }) => {
   const imageRef = useRef(null);
+  const { allProduct } = useContext(CartContext);
   const { id } = useParams();
-  const item = product.find((prod) => prod.id == id);
-  const [quantity, setQuantity] = useState(1)
+  const item = allProduct.find((prod) => prod.id == id);
+  const [quantity, setQuantity] = useState(1);
 
-
-  function addItem(){
-    if (quantity <= 0) return 
+  function addItem() {
+    if (quantity <= 0) return;
     const obj = {
       id: item.id,
       image1: item.image1,
       name: item.name,
       price: item.price,
-      quantity: quantity
-    }
+      quantity: quantity,
+    };
 
-    return obj
+    return obj;
   }
   return (
     <ProductSection>
@@ -62,10 +61,19 @@ const SingleProduct = ({addToBasket}) => {
 
           <div id="quanity">
             <h3>Quantity:</h3>
-            <input type="number" max={10} min={1}value={quantity} onChange={(e) => setQuantity(e.target.value)} style={{textAlign: "center"}}></input>
+            <input
+              type="number"
+              max={10}
+              min={1}
+              value={quantity}
+              onChange={(e) => setQuantity(e.target.value)}
+              style={{ textAlign: "center" }}
+            ></input>
           </div>
 
-          <AddtoCart type="button" onClick={(item)=>addToBasket(addItem())}>Add to Cart</AddtoCart>
+          <AddtoCart type="button" onClick={(item) => addToBasket(addItem())}>
+            Add to Cart
+          </AddtoCart>
         </section>
       </TextWrapper>
     </ProductSection>
