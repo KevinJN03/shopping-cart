@@ -30,12 +30,32 @@ const Community = () => {
   );
 };
  const Section = styled.section`
-margin-bottom: 5%
+width: 100%
+
 
  `
 const Wrapper = styled.div`
 display: flex;
-flex-direction: row;
-gap: 50px;
+  width: 100%;
+  justify-content: center;
+
+  flex-direction: row;
+  gap: 50px;
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  @media screen and (min-width: 1080px) {
+    flex-wrap: nowrap !important;
+  }
+
+  @media screen and (min-width: 781px) , screen (max-width: 1000px){
+    flex-wrap: wrap;
+  }
 `;
 export default Community;

@@ -15,5 +15,9 @@ flex-direction: column;
 gap: 30px;
 text-align: center;
 
+
+@media screen and (max-width: 900px) {
+    width: 90%;
+}
 `
 export default Story;
