@@ -9,6 +9,7 @@
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 #errorpage{
@@ -63,5 +64,8 @@ margin-top: 40px;
 @media screen and (max-width: 780px){
     #errorpage {
         width: 100%
+    }
+    #text-container p {
+        width: 80%;
     }
 }
