@@ -1,0 +1,67 @@
+#errorpage-wrapper {
+    margin-top: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+#text-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#errorpage{
+    width: 40%;
+    text-align: center;
+}
+
+#header, #sub-header{
+    margin-bottom: 20px;
+}
+
+.link-buttons {
+display: flex;
+flex-direction: row;
+gap: 20px;
+justify-content: center;
+margin-top: 40px;
+
+}
+#header{
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#sub-header {
+    letter-spacing: 10px;
+    font-size: 1.9rem;
+    text-align: center;
+}
+.link-buttons * {
+    border-radius: 5px;
+    padding: 20px 50px;
+    color: white;
+    background-color: var(--accent-brown);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.link-buttons *:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: black;
+    text-underline-offset: 5px
+}
+
+#image-wrapper img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+@media screen and (max-width: 780px){
+    #errorpage {
+        width: 100%
+    }
+}

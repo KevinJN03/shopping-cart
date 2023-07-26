@@ -5,22 +5,23 @@ const Lumina = ({ title, description, image1, image2 }) => {
   return (
     <Wrapper>
       <Container1>
-        <h2>{title}</h2>
-        <p style={{ width: "500px" }}>{description}</p>
+        <div style={{ width: "100%"}}>
+          <h2>{title}</h2>
+        <p style={{ width: "100%" }}>{description}</p>
         <Link style={{color: "black", textDecoration: "none"}} to="/shop">
           <h3 style={{margin: "10px 0", textDecoration: "underline"}}>Browse {title}</h3>
         </Link>
-        <ImgWrapper width="100%" height="800px">
+        </div>
+        <ImgWrapper width="100%" height="700px" className="wrapper_collection">
           <Img src={image1}></Img>
         </ImgWrapper>
       </Container1>
-
       <Container2>
-        <ImgWrapper width="900px" height="600px">
+        <ImgWrapper width="100%" height={"500px"} className="wrapper_collection">
           <Img src={image2}></Img>
         </ImgWrapper>
-        <Link to="/shop">
-          <button type="button" style={{padding: "20px", marginTop: "20px", border: "none", color: "white", backgroundColor: "black"}}>See The Collection </button>
+        <Link to="/shop" className="link collection-btn">
+          SEE THE COLLECTION
         </Link>
       </Container2>
     </Wrapper>
@@ -48,16 +49,37 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   gap: 50px;
-  width: 70%;
+  width: 90%;
+ 
+  padding: 0 50px;
+
+  @media screen and (max-width: 780px){
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 20px; 
+  }
+  
 `;
-const Container1 = styled.section`
-  width: 100%;
+const Container1 = styled.div`
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (max-width: 780px){
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px; 
+  }
 `;
 
-const Container2 = styled.section`
-width: 100%
+const Container2 = styled.div`
+
 display: flex;
 flex-direction: column;
+width: 100%;
+// height: 100%;
 
 `;
 

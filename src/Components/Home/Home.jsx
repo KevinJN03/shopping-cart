@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import image from "../../assets/img/jed-villejo-xkeLHL5suF0-unsplash.jpg";
-import dogImage from "../../assets/img/ruby-schmank-Zk3t0u_p4pE-unsplash.jpg";
+import dogImage from "../../assets/img/mollie-sivaram-ts1zXzsD7xc-unsplash.jpg";
+import visionImage from "../../assets/img/david-travis-aVvZJC0ynBQ-unsplash.jpg";
+import legacyImage from "../../assets/img/glen-hodson-liko5tJvphY-unsplash.jpg";
+import img1 from "../../assets/img/lance-reis-wIykUNwwJQk-unsplash.jpg";
+import img2 from "../../assets/img/apostolos-vamvouras-mKi4QEJXRCs-unsplash.jpg";
 import "../View/body.css";
 import Container from "./Container";
 import { styled } from "styled-components";
@@ -8,7 +12,7 @@ import Lumina from "./Lumina";
 import Slider from "./Slider";
 const Home = () => {
   return (
-    <>
+    <section id="home">
       <div id="image-wrapper-1">
         <img src={image}></img>
         <Link to="/shop">
@@ -19,20 +23,13 @@ const Home = () => {
       </div>
       <section
         id="lumina"
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "100px",
-        }}
       >
         <Lumina
-          image1={dogImage}
-          image2={image}
-          title={"AMORA"}
+          image1={img1}
+          image2={img2}
+          title={"Crafted with Precision"}
           description={
-            "Crafted with care, each pair of Amora glasses is a unique statement piece that combines contemporary design with classic elegance. The collection features a range of frames in various colors and styles, all made from high-quality materials that are built to last."
+            "At Urban Gaze, we pour meticulous care into every pair of glasses, crafting them as unique statement pieces that blend contemporary design with timeless elegance. Each frame is an artistic fusion, a true embodiment of our vision."
           }
         />
       </section>
@@ -53,36 +50,36 @@ const Home = () => {
           <Container
             image={dogImage}
             alt={"dog with classes"}
-            title={"Gallery of dogs wearing glasses"}
+            title={"A Fashionable Frenzy"}
             description={
-              "From classic aviators to colorful frames, dogs of all breeds and sizes are embracing this fun and playful trend, making a bold fashion statement that's impossible to ignore."
+              "Step into our whimsical world where dogs of all breeds and sizes embrace the playful trend of wearing glasses. From classic aviators to vibrant frames, each furry friend makes a bold and unforgettable fashion statement that's impossible to ignore."
             }
-            category={"FEEL GOOD"}
+            category={`PAWSITIVELY CHIC`}
           />
           <Container
-            image={dogImage}
-            alt={"dog with classes"}
-            title={"Gallery of dogs wearing glasses"}
+            image={visionImage}
+            alt={"looking through glasses with eye test chart in the background"}
+            title={"Empowering Your Vision"}
             description={
-              "From classic aviators to colorful frames, dogs of all breeds and sizes are embracing this fun and playful trend, making a bold fashion statement that's impossible to ignore."
+              "Embrace the power of knowledge as we equip you with valuable insights and practices to safeguard your eyes. With Urban Gaze by your side, navigate the world of eye health confidently, unlocking a lifetime of clear vision and ocular well-being. Together, let's nurture your vision for a brighter and clearer future."
             }
-            category={"FEEL GOOD"}
+            category={"NURTURING VISION"}
           />
           <Container
-            image={dogImage}
-            alt={"dog with classes"}
-            title={"Gallery of dogs wearing glasses"}
+            image={legacyImage}
+            alt={"old man with glasses in black in white"}
+            title={"Illuminating Lives with Care"}
             description={
-              "From classic aviators to colorful frames, dogs of all breeds and sizes are embracing this fun and playful trend, making a bold fashion statement that's impossible to ignore."
+              "Witness the legacy in motion as compassionate eyes meet the innocent gazes of young children. Urban Gaze's mission unfolds through this remarkable odyssey, leaving behind a trail of hope and brighter futures for generations to come. Together, let us illuminate lives with care, one vision at a time."
             }
-            category={"FEEL GOOD"}
+            category={"A Visionary Odyssey"}
           />
         </BlogWrapper>
       </section>
       <section id="carousel" style={{width: "100%"}}>
         <Slider />
       </section>
-    </>
+    </section>
   );
 };
 
@@ -93,6 +90,13 @@ const BlogWrapper = styled.div`
   flex-direction: row;
   gap: 50px;
   margin-bottom: 100px;
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
 `;
 
 export default Home;

@@ -1,5 +1,14 @@
 import { styled } from "styled-components";
 const Total = ({total})=> {
+
+
+    const completeTransaction = () => {
+
+        if(total <= 0){
+          return 
+        }
+         alert("Transaction was successful")
+    }
 return (
     <Wrapper>
         <TextWrapper>
@@ -7,7 +16,7 @@ return (
     <h3>£{total}</h3>
     <p>Shipping and taxes computed at checkout</p>  
         </TextWrapper>
-    <Button onClick={() => alert("Transaction was successful")} type="button">Checkout</Button>
+    <Button onClick={() => completeTransaction()} type="button">Checkout</Button>
     </Wrapper>
     
 )
