@@ -1,7 +1,7 @@
 import blackLogo from "../../assets/logo/urbangaze-logo.png";
 import shoppingBag from "../../assets/logo/shopping-bag.png";
 import "../View/header.css";
-import HeaderNav from "./header-nav";
+import HeaderNav from "./Header-nav";
 import { Link, Outlet } from "react-router-dom";
 import { CartContext } from "../../App";
 import { styled } from "styled-components";
