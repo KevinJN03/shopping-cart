@@ -4,7 +4,7 @@ import ErrorPage from "./Components/ErrorPage/ErrorPage";
 
 
 const Router = () => {
-  const router = createHashRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
