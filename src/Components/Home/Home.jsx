@@ -23,13 +23,6 @@ const Home = () => {
       </div>
       <section
         id="lumina"
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          marginTop: "100px",
-        }}
       >
         <Lumina
           image1={img1}
@@ -97,6 +90,13 @@ const BlogWrapper = styled.div`
   flex-direction: row;
   gap: 50px;
   margin-bottom: 100px;
+
+  @media screen and (max-width: 780px) {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
 `;
 
 export default Home;

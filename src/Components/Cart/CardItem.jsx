@@ -17,10 +17,8 @@ const CardItem = ({ id, image1, price, quantity, total, removeItem , updateItem}
           </ImgWrapper>
           <h3>{price}</h3>
           <input
-          style={{textAlign: "center"}}
             type="number"
             value={amount}
-
             min={1}
             max={10}
             onChange={(e)=> setAmount(e.target.value)}

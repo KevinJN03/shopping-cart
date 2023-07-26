@@ -30,7 +30,7 @@ const Community = () => {
   );
 };
  const Section = styled.section`
-margin-bottom: 10%
+margin-bottom: 5%
 
  `
 const Wrapper = styled.div`

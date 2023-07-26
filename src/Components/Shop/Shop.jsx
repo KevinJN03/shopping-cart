@@ -11,7 +11,6 @@ const Shop = () => {
   return (
     
     <section id="shop-section">
-      {console.log("name at shop: ", name, "Id at shop: ", id) }
       <Banner />
       <Products />
     </section>

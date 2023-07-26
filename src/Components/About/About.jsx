@@ -55,7 +55,6 @@ const About = () => {
 
 const Wrapper = styled.section`
 margin-top: 100px;
-
 width: 100%;
 display: flex;
 flex-direction: column;

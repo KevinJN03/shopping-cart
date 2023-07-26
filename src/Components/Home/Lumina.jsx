@@ -12,16 +12,16 @@ const Lumina = ({ title, description, image1, image2 }) => {
           <h3 style={{margin: "10px 0", textDecoration: "underline"}}>Browse {title}</h3>
         </Link>
         </div>
-        <ImgWrapper width="100%" height="700px">
+        <ImgWrapper width="100%" height="700px" className="wrapper_collection">
           <Img src={image1}></Img>
         </ImgWrapper>
       </Container1>
       <Container2>
-        <ImgWrapper width="100%" height={"500px"}>
+        <ImgWrapper width="100%" height={"500px"} className="wrapper_collection">
           <Img src={image2}></Img>
         </ImgWrapper>
-        <Link to="/shop">
-          <button type="button" style={{padding: "20px", marginTop: "20px", border: "none", color: "white", backgroundColor: "black"}}>See The Collection </button>
+        <Link to="/shop" className="link collection-btn">
+          SEE THE COLLECTION
         </Link>
       </Container2>
     </Wrapper>
@@ -52,6 +52,12 @@ const Wrapper = styled.section`
   width: 90%;
  
   padding: 0 50px;
+
+  @media screen and (max-width: 780px){
+    flex-direction: column-reverse;
+    width: 100%;
+    padding: 0 20px; 
+  }
   
 `;
 const Container1 = styled.div`
@@ -59,6 +65,13 @@ const Container1 = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (max-width: 780px){
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px; 
+  }
 `;
 
 const Container2 = styled.div`

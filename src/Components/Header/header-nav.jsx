@@ -4,12 +4,11 @@ const HeaderNav = () => {
     return (
         <section id="nav-section">
             <div className="header_nav">
-            <p>COLLECTION</p>
-            <p>EYEGLASSES</p>
-            <p>SUNGLASSES</p>
-            <Link to={"/about"}>
-            <p>ABOUT US</p>
-            </Link>
+
+            <Link className="link" to={"/shop"}>COLLECTION</Link>
+            <Link className="link" to={"/shop"}>EYEGLASSES</Link>
+            <Link className="link" to={"/shop"}>SUNGLASSES</Link>
+            <Link className="link" to={"/about"}>ABOUT US</Link>
         </div>
         </section>
         

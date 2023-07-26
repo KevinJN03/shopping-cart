@@ -54,8 +54,7 @@ const Footer = () => {
         <section id="footer-right">
           <h2>ASK A URBAN GAZE SPECIALIST</h2>
           <p>
-            Whether you're a collector or visiting for the first time, we're
-            here to assist!
+            Whether you're a collector or visiting for the first time, we're here to assist!
           </p>
 
           <div id="icons">
