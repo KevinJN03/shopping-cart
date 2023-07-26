@@ -1,17 +1,19 @@
 import { styled } from "styled-components";
-import {Link}  from "react-router-dom";
+import { Link } from "react-router-dom";
 const StoryEyeCare = ({ image, alt, text1, text2, title }) => {
   return (
     <Wrapper>
       <div id="eyecare-container">
-      <TextWrapper>
-        <h2>{title}</h2>
-        <p>{text1}</p>
-        <p>{text2}</p>
-        <Link>
-        <Link to={"/eyecare"}><h3>Learn More</h3></Link>
-        </Link>
-      </TextWrapper>
+        <TextWrapper>
+          <h2>{title}</h2>
+          <p>{text1}</p>
+          <p>{text2}</p>
+          <Link>
+            <Link to={"/eyecare"} className={"link learn-more-btn"}>
+              <h3>Learn More</h3>
+            </Link>
+          </Link>
+        </TextWrapper>
       </div>
       <IMGWrapper>
         <Img src={image} alt={alt} />
@@ -26,6 +28,13 @@ const Wrapper = styled.section`
   display: flex;
   flex-direction: row;
   margin-bottom: 100px;
+  margin-top: 80px;
+  background-color: var(--accent-brown);
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+    margin-top: calc(260px  + 20px);
+    margin-bottom: 80px;
+  }
 `;
 
 const IMGWrapper = styled.div`
@@ -42,18 +51,26 @@ const Img = styled.img`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: cent;
+  justify-content: center;
   align-items: end;
-  padding: 20px;
-  
-  text-align: right;
+  color: white;
 
-  @media (max-width: 1500px){
-    width: 100%;
+  text-align: right;
+  padding: 40px 20px;
+
+  @media screen and (max-width: 900px) {
+    align-items: center;
+  }
+  @media (min-width: 1600px) {
+    width: 50%;
+    height: 100%;
+  
   }
 
-  @media (min-width: 1600px){
-    width: 50%;
+  @media (max-width: 1600px) {
+    width: 100%;
+    height: 100%
+    
   }
 `;
 

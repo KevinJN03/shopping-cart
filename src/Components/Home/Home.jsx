@@ -84,9 +84,13 @@ const Home = () => {
 };
 
 const BlogWrapper = styled.div`
+
+
+
   display: flex;
   width: 60%;
   justify-content: center;
+
   flex-direction: row;
   gap: 50px;
   margin-bottom: 100px;
@@ -96,6 +100,15 @@ const BlogWrapper = styled.div`
     align-items: center;
     width: 100%;
 
+  }
+
+  @media screen and (min-width: 1080px) {
+    flex-wrap: nowrap !important;
+  
+  }
+
+  @media screen and (min-width: 781px) , screen (max-width: 1000px){
+    flex-wrap: wrap;
   }
 `;
 
