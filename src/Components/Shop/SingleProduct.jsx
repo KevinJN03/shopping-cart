@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState, useRef, useContext } from "react";
+import { useEffect, useState, useRef, useContext} from "react";
 import { styled } from "styled-components";
 import { CartContext } from "../../App";
 import { v4 as uuidv4 } from "uuid";
@@ -20,8 +20,16 @@ const SingleProduct = ({ addToBasket }) => {
       quantity: quantity,
     };
 
+    
+
     return obj;
   }
+
+  function changeImage(e){
+    if(e.target.src === undefined || null) return
+    imageRef.current.src = e.target.src
+}
+
   return (
     <ProductSection>
       <ImgWrapper>
@@ -31,8 +39,9 @@ const SingleProduct = ({ addToBasket }) => {
           src={item.image1}
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         ></img>
-        <MiniImgWrapper onClick={(e) => (imageRef.current.src = e.target.src)}>
-          <img
+        {/* {imageRef.current.src = e.target.src ? e.target.src : "none" &&} */}
+        <MiniImgWrapper onClick={(e) =>  changeImage(e) }>
+          <img 
             src={item.image1}
             style={{ width: "100px", height: "100%", objectFit: "cover" }}
           ></img>
